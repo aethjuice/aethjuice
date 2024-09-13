@@ -1,28 +1,20 @@
 #!/bin/bash
 
-# Define colors using a more readable format
-GREEN="\033[32m"
-RESET="\033[0m"
+GREEN="\e[32m"
+AE='\033[0m'
 
-# Define the logo as a string array
-logo=("
-    __.....__
-    .-''      '.
-    /  .-''"'-.  `.
-    __/  /________\  \"
-   .:--.'. !          !
-   / |  \ |\  .-------------'
-   `" __ | | \  '-.____...---."
-    .'.''| |  `.           .'
-    / /  | |_  `''-...... -'
-    \ \._,\ '/            
-     `--'  `"
-")
-
-# Print the logo with color and reset
-for line in "${logo[@]}"; do
-    echo -e "${GREEN}$line${RESET}"
-done
-
+echo -e "${GREEN}"
+echo -e "               __.....__     "
+echo -e "           .-''         '.    "
+echo -e "          /     .-''"'-.  `.  "
+echo -e "    __   /     /________\   \"
+echo -e " .:--.'. !                  !"
+echo -e "/ |   \ |\    .-------------'"
+echo -e "`" __ | | \    '-.____...---."'
+echo -e " .'.''| |  `.             .' "
+echo -e "/ /   | |_   `''-...... -'   "
+echo -e "\ \._,\ '/                   "
+echo -e "  `--'  `"                   "
 echo ""
 echo "Join our discord https://discord.gg/aetherealco"
+echo -e "${AE}"
